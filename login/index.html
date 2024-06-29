@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymESC Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login js-login-container">
+            <div class="login-info">
+                <h1>Faça login<br>e entre para o nosso time</h1>
+                <div class="illustration">
+                    <img src="./src/login-exercise.svg" alt="Exercise Illustration">
+                </div>
+            </div>
+            <div class="login-form">
+                <div class="login-container">
+                    <h2>LOGIN</h2>
+                    <form method="get">
+                        <label for="username">Usuário</label>
+                        <input type="text" id="username" class="js-username" name="username" placeholder="Usuário">
+                        <label for="password">Senha</label>
+                        <input type="password" class="js-password" id="password" name="password" placeholder="Senha">
+                        <button type="submit" class="js-submit">LOGIN</button>
+                        <span class="register">
+                            É novo aqui?
+                            <a href="../register">Cadastre-se</a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2><span class="green">Gym</span>Esc</h2>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

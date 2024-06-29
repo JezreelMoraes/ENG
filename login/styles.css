@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("./src/bg.svg");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  max-width: 1200px;
+}
+
+.login-info {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-info h1 {
+  text-align: left;
+  font-size: 2.2em;
+  color: #00FF9C;
+}
+
+.illustration {
+  margin-top: 20px;
+}
+
+.illustration img {
+  width: 100%;
+  min-width: 450px;
+  height: auto;
+}
+
+.login-form {
+  padding: 40px;
+}
+
+.login-container {
+  flex: 1;
+  background-color: #282845;
+  padding: 40px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  max-width: 250px;
+  margin-top: 5%;
+  align-items: center;
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+  height: 50%;
+}
+
+.login-form h2 {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #00FF9C;
+}
+
+.login-form form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  color: #ccc;
+}
+
+.login-form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(81, 71, 105);
+  color: #fff;
+  font-size: 1em;
+}
+
+.login-form input::placeholder {
+  color: #aaa;
+  opacity: 1; /* Firefox */
+}
+
+.login-form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00FF9C;
+  color: #000;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 0px 10px #00FF9C;
+}
+
+.login-form button:hover {
+  background-color: #00e68a;
+}
+
+.login-form button:active  {
+  background-color: #0ca065;
+  box-shadow: none;
+}
+
+.login-form .register {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.login-form .register a {
+  color: #00FF9C;
+}
+
+.footer {
+  padding-left: 40px;
+}
+
+.footer h2 {
+  font-size: 2em;
+}
+
+.green {
+  color: #00e68a;
+}
