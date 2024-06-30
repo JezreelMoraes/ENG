@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,51 +12,12 @@
     <link rel="stylesheet" href="/src/css/content.css">
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="navbar-container">
-            <div class="train-container">
-                <a href="/home">
-                    <div class="logo">
-                        <h1><span class="green">Gym</span>Esc</h1>
-                    </div>
-                </a>
-                <a href="/workouts">
-                    <div class="button">
-                        <img src="/src/icons/workout.svg" alt="gym weight" class="icon">
-                        <img src="/src/icons/workout_black.svg" alt="gym weight" class="icon black">
-                        <span>Treinos</span>
-                    </div>
-                </a>
+    <div class="page-container">
+        <div class="js-template" data-src="navbar/navbar.html"></div>
 
-                <a href="/exercises">
-                    <div class="button">
-                        <img src="/src/icons/weight.svg" alt="gym weight" class="icon">
-                        <img src="/src/icons/weight_black.svg" alt="gym weight" class="icon black">
-                        <span>Exercícios</span>
-                    </div>
-                </a>
-            </div>
-            <div class="setting-container">
-                <a href="/settings">
-                    <div class="button active">
-                        <img src="/src/icons/gear.svg" alt="gear" class="icon">
-                        <img src="/src/icons/gear_black.svg" alt="gear" class="icon black">
-                        <span>Configurações</span>
-                    </div>
-                </a>
-
-                <a href="/login">
-                    <div class="button red">
-                        <img src="/src/icons/exit.svg" alt="exit" class="icon">
-                        <img src="/src/icons/exit_black.svg" alt="exit" class="icon black">
-                        <span>Sair</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <div class="content-container">
+        <div class="content-container container">
             <div class="content">
                 <h2 class="title">Preparado para o <span class="green">treino</span>?</h2>
                 <div class="illustration">
@@ -67,4 +29,5 @@
 
     <script src="/src/javascript/globals.js"></script>
     <script src="./src/javascript/script.js"></script>
+
 </html>
