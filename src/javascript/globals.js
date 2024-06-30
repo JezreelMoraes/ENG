@@ -50,5 +50,4 @@ function NavbarController() {
     init();
 };
 
-
 const loadTemplatesController = new LoadTemplatesController();
