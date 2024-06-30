@@ -79,6 +79,16 @@ body {
     gap: 2rem;
 }
 
+.container {
+    background-color: var(--container-primary-bg-color);
+    box-shadow: 0 1rem 2rem var(--shadow-dark-color);
+    border-radius: 1rem;
+    padding: 4rem;
+    width: 100%;
+
+    margin-bottom: 2rem;
+}
+
 .logo h1 {
     font-size: 3.5rem;
 }
@@ -91,4 +101,17 @@ h1,
 h2,
 h3 {
     font-size: 1rem;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

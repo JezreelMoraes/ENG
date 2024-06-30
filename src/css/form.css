@@ -1,13 +1,8 @@
 .form-content-container {
-    background-color: var(--container-primary-bg-color);
     padding: 4rem;
-    border-radius: 1rem;
 
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-    box-shadow: 0 1rem 2rem var(--shadow-dark-color);
 }
 
 .form-header {
@@ -53,6 +48,18 @@
     width: 100%;
 }
 
+.form-data select:invalid {
+    color: var(--input-font-placeholder-color);
+}
+
+.form-data option {
+    color: var(--input-font-active-color);
+}
+
+.form-data option:disabled {
+    color: var(--input-font-placeholder-color);
+}
+
 .form-data input::placeholder {
     color: var(--input-font-placeholder-color);
 }
@@ -79,7 +86,7 @@
 }
 
 .form-footer .details {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 2rem;
     text-decoration: none;
 }
