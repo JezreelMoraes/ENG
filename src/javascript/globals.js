@@ -39,12 +39,9 @@ function NavbarController() {
 
     function init() {
         if (!_this.reference) return;
-
         const pagename = window.location.pathname.split("/")[1];
-        console.log(pagename);
 
         const targetButton = _this.reference.querySelector(`.button.${pagename}`);
-        console.log(targetButton);
         if (!targetButton) return;
 
         targetButton.classList.add("active");
