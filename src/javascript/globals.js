@@ -1,3 +1,4 @@
+let navbarController;
 
 async function getData(filename) {
     return fetch(`/src/data/${filename}.json`)
@@ -27,7 +28,30 @@ function LoadTemplatesController() {
         }
     };
 
+    init().then(() => {
+        navbarController = new NavbarController()
+    });
+};
+
+function NavbarController() {
+    this.reference = document.querySelector(".js-navbar");
+    const _this = this;
+
+    function init() {
+        if (!_this.reference) return;
+
+        const pagename = window.location.pathname.split("/")[1];
+        console.log(pagename);
+
+        const targetButton = _this.reference.querySelector(`.button.${pagename}`);
+        console.log(targetButton);
+        if (!targetButton) return;
+
+        targetButton.classList.add("active");
+    };
+
     init();
-}
+};
+
 
 const loadTemplatesController = new LoadTemplatesController();
