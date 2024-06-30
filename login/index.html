@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,61 @@
     <title>GymESC Login</title>
 
     <link rel="stylesheet" href="/src/css/globals.css">
+    <link rel="stylesheet" href="/src/css/form.css">
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
+
 <body>
     <div class="page-container">
-        <div class="login js-login-container">
-            <div class="login-info">
-                <div class="title green">
-                    <h1>Faça login<br>e entre para o nosso time</h1>
+        <div class="login-page-container">
+            <div class="login">
+                <div class="login-illustration">
+                    <div class="illustration-title green">
+                        <h1>Faça login<br>e entre para o nosso time</h1>
+                    </div>
+                    <div class="illustration">
+                        <img src="/src/images/login-exercise.svg" alt="Exercise Illustration">
+                    </div>
+                    <div class="illustration-footer">
+                        <div class="logo">
+                            <h2><span class="green">Gym</span>Esc</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="illustration">
-                    <img src="/src/images/login-exercise.svg" alt="Exercise Illustration">
-                </div>
-            </div>
-            <div class="login-form">
-                <div class="login-container">
-                    <h2>LOGIN</h2>
+                <div class="login-form-container js-login-form-container">
                     <form method="get">
-                        <label for="username">Usuário</label>
-                        <input type="text" id="username" class="js-username" name="username" placeholder="Usuário">
-                        <label for="password">Senha</label>
-                        <input type="password" class="js-password" id="password" name="password" placeholder="Senha">
-                        <button type="submit" class="js-submit">LOGIN</button>
-                        <span class="register">
-                            É novo aqui?
-                            <a href="/register">Cadastre-se</a>
-                        </span>
+                        <div class="form-content-container login-form-content-container">
+                            <div class="form-header">
+                                <div class="title">
+                                    <h2>LOGIN</h2>
+                                </div>
+                            </div>
+                            <div class="form-data">
+                                <label for="username">Usuário</label>
+                                <input type="text" id="username" class="js-username small" name="username"
+                                    placeholder="Usuário">
+
+                                <label for="password">Senha</label>
+                                <input type="password" class="js-password small" id="password" name="password"
+                                    placeholder="Senha">
+
+                                <button type="submit" class="js-submit">LOGIN</button>
+                            </div>
+                            <div class="form-footer">
+                                <span class="details">
+                                    É novo aqui?
+                                    <a href="/register">Cadastre-se</a>
+                                </span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <h2><span class="green">Gym</span>Esc</h2>
         </div>
     </div>
 
     <script src="/src/javascript/globals.js"></script>
     <script src="./src/javascript/script.js"></script>
 </body>
+
 </html>

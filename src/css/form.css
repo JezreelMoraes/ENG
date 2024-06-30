@@ -1,0 +1,89 @@
+.form-content-container {
+    background-color: var(--container-primary-bg-color);
+    padding: 4rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    box-shadow: 0 1rem 2rem var(--shadow-dark-color);
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.form-header .title h2 {
+    font-size: 2.5rem;
+    color: var(--green-color);
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-data label {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: var(--label-light-color);
+}
+
+.form-data input,
+.form-data select,
+.form-data button {
+    background-color: var(--input-bg-color);
+    color: var(--input-font-active-color);
+    font-size: 1.5rem;
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    border-radius: .5rem;
+    border: none;
+
+
+    min-width: 20rem;
+    width: 100%;
+}
+
+.form-data input::placeholder {
+    color: var(--input-font-placeholder-color);
+}
+
+.form-data button {
+    border-radius: .5rem;
+    background-color: var(--button-green-color);
+    color: var(--button-font-dark-color);
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 1rem var(--button-green-color);
+
+    margin-top: 1rem;
+}
+
+.form-data button:hover {
+    background-color: var(--button-hover-green-color);
+}
+
+.form-data button:active {
+    background-color: var(--button-click-green-color);
+    box-shadow: none;
+}
+
+.form-footer .details {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.form-footer .details a {
+    color: var(--green-color);
+}
