@@ -1,24 +1,60 @@
-table {
-    column-span: none;
+:root {
+    --table-main-gray-color: #ddd;
+    --table-main-gray-light-color: #ddddddcc;
+    --table-row-deleted-color: #ff6e6e38;
+    --table-row-received-color: rgba(100, 255, 0, 0.22);
+}
+
+.list-container {
+    width: 100%;
+    overflow-x: auto;
 }
 
 .list {
-    width: max-content;
-    border-spacing: none;
-    border: none;
+    width: 100%;
+    border-spacing: 0;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--table-main-gray-color);
+
 }
 
-.list th {
-    border-spacing: none;
-    outline: none;
-    border: none;
-    padding: 20px;
-    border-bottom: 1px solid #67678a;
+.list th  {
+    background-color: var(--table-main-gray-color);
+    padding: 10px 8px;
+}
+
+.list th:first-child {
+    border-top-left-radius: 7px;
+}
+
+.list th:last-child {
+    border-top-right-radius: 7px;
+}
+
+.list tr:has(td) {
+    transition: .2s ease-in-out;
+}
+
+.list tr:hover {
+    background-color: var(--table-main-gray-light-color);
 }
 
 .list td {
-    border-spacing: none;
-    outline: none;
-    border: none;
-    padding: 15px;
+    border-bottom: 1px solid var(--table-main-gray-color);
+    border-top: 1px solid transparent;
+    border-left: 1px dashed var(--table-main-gray-light-color);
+    padding: 4px 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.list td.data-value {
+    text-align: center;
+}
+
+.list td.data-actions {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 5px;
 }

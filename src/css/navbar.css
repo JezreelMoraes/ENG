@@ -1,7 +1,7 @@
 .navbar-container {
-    background-color: #282845;
+    background-color: var(--container-primary-bg-color);
     border-radius: 10px;
-    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 10px 20px var(--shadow-dark-color);
     padding: 25px;
 
     display: flex;
@@ -19,19 +19,19 @@
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
-    outline: 1px solid #00FF9C;
-    color: #fff;
+    outline: 1px solid var(--button-green-color);
+    color: var(--button-font-ligth-color);;
     margin-bottom: 10px;
 }
 
 .navbar-container .button.red {
-    outline: 1px solid tomato;
+    outline: 1px solid var(--red-color);
 }
 
 .navbar-container .button:hover {
-    background-color: #00FF9C;
-    box-shadow: 0px 0px 10px #00FF9C;
-    color: #282845;
+    background-color: var(--button-green-color);
+    box-shadow: 0px 0px 10px var(--button-green-color);
+    color: var(--button-font-dark-color);
 }
 
 .icon.black {
@@ -55,15 +55,15 @@
 }
 
 .navbar-container .button.red:hover {
-    background-color: tomato;
+    background-color: var(--red-color);
     box-shadow: 0px 0px 10px rgb(255, 120, 96);
-    color: #fff;
+    color: var(--button-font-ligth-color);
 }
 
 .button.active {
-    background-color: #00FF9C;
-    box-shadow: 0px 0px 10px #00FF9C;
-    color: #282845;
+    background-color: var(--button-green-color);
+    box-shadow: 0px 0px 10px var(--button-green-color);
+    color: var(--button-font-dark-color);
 }
 
 .button.active>.icon {

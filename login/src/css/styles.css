@@ -16,7 +16,7 @@
 .login-info h1 {
     text-align: left;
     font-size: 2.2em;
-    color: #00FF9C;
+    color: var(--green-color);
 }
 
 .illustration {
@@ -35,7 +35,7 @@
 
 .login-container {
     flex: 1;
-    background-color: #282845;
+    background-color: var(--container-primary-bg-color);
     padding: 40px;
     display: flex;
     border-radius: 10px;
@@ -43,7 +43,7 @@
     max-width: 250px;
     margin-top: 5%;
     align-items: center;
-    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 10px 20px var(--shadow-dark-color);
     height: 50%;
 }
 
@@ -51,7 +51,7 @@
     margin: 0;
     margin-bottom: 40px;
     font-size: 2em;
-    color: #00FF9C;
+    color: var(--green-color);
 }
 
 .login-form form {
@@ -64,7 +64,7 @@
 
 .login-form label {
     margin-bottom: 5px;
-    color: #ccc;
+    color: var(--label-light-color);
 }
 
 .login-form input {
@@ -72,35 +72,34 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: rgb(81, 71, 105);
-    color: #fff;
+    background-color: var(--input-bg-color);
+    color: var(--input-font-active-color);
     font-size: 1em;
 }
 
 .login-form input::placeholder {
-    color: #aaa;
+    color: var(--input-font-placeholder-color);
     opacity: 1;
-    /* Firefox */
 }
 
 .login-form button {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #00FF9C;
-    color: #000;
+    background-color: var(--button-green-color);
+    color: var(--button-font-dark-color);
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0px 0px 10px #00FF9C;
+    box-shadow: 0px 0px 10px var(--button-green-color);
 }
 
 .login-form button:hover {
-    background-color: #00e68a;
+    background-color: var(--button-hover-green-color);
 }
 
 .login-form button:active {
-    background-color: #0ca065;
+    background-color: var(--button-click-green-color);
     box-shadow: none;
 }
 
@@ -110,7 +109,7 @@
 }
 
 .login-form .register a {
-    color: #00FF9C;
+    color: var(--green-color);
 }
 
 .footer {
@@ -119,8 +118,4 @@
 
 .footer h2 {
     font-size: 2em;
-}
-
-.green {
-    color: #00e68a;
 }

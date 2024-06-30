@@ -1,5 +1,5 @@
 a {
-    color: #fff;
+    color: var(--white-color);
     text-decoration: none;
 }
 
@@ -14,9 +14,9 @@ a {
 
 .content-container {
     padding: 20px;
-    background-color: #282845;
+    background-color: var(--container-primary-bg-color);
     border-radius: 10px;
-    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 10px 20px var(--shadow-dark-color);
 
     display: flex;
     width: 100%;
