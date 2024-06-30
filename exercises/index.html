@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymESC Home</title>
+    <title>GymESC Exercícios</title>
+    <link rel="stylesheet" href="/globals.css">
+    <link rel="stylesheet" href="/navbar.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container js-exercises-container">
         <div class="navbar-container">
             <div class="train-container">
                 <a href="/home">
@@ -24,7 +26,7 @@
                 </a>
 
                 <a href="/exercises">
-                    <div class="button">
+                    <div class="button active">
                         <img src="./src/icons/weight.svg" alt="gym weight" class="icon">
                         <img src="./src/icons/weight_black.svg" alt="gym weight" class="icon black">
                         <span>Exercícios</span>
@@ -52,9 +54,20 @@
 
         <div class="content-container">
             <div class="content">
-                <h2 class="title">Nenhum <span class="green">exercicio</span> encontrado</h2>
-                <div class="illustration">
-                    <img src="./src/trains_empty_state.svg" alt="Exercise Illustration">
+                <div class="empty-state">
+                    <h2 class="title">Nenhum <span class="green">exercicio</span> encontrado</h2>
+                    <div class="illustration">
+                        <img src="./src/trains_empty_state.svg" alt="Exercise Illustration">
+                    </div>
+                </div>
+                <div class="exercises-list js-list">
+                    <table class="js-table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

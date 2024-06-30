@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "user_id": "1",
+        "name": "Supino",
+        "image_path": "",
+        "description": "Faça bla bla"
+    },
+    {
+        "id": "2",
+        "user_id": "1",
+        "name": "Flexões",
+        "image_path": "",
+        "description": "Empurre o chão repetidas vezes"
+    }
+]
