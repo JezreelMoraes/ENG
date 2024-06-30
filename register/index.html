@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymESC Cadastro</title>
+    <link rel="stylesheet" href="/src/css/globals.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,13 +16,13 @@
                     <div class="personal-data data">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Nome">
-                    
+
                         <label for="weight">Peso (Kg)</label>
                         <input type="text" id="weight" name="weight" placeholder="Peso (Kg)">
-                    
+
                         <label for="heigh">Altura (cm)</label>
                         <input type="text" id="heigh" name="heigh" placeholder="Altura (cm)">
-                    
+
                         <label for="train_level">Nivel de treino</label>
                         <select name="train_level" id="train_level">
                             <option value="0">Iniciante</option>
@@ -33,17 +34,17 @@
                     <div class="user-data data">
                         <label for="email">E-mail</label>
                         <input type="text" id="email" name="email" placeholder="E-mail">
-        
+
                         <label for="password">Senha</label>
                         <input type="password" id="password" name="password" placeholder="Senha">
-        
+
                         <label for="re_password">Repita a senha</label>
                         <input type="password" id="re_password" name="re_password" placeholder="Senha">
                     </div>
                 </div>
-                
+
                 <button type="submit">CADASTRAR-SE</button>
-                
+
                 <span class="login">
                     Já tem um cadastro?
                     <a href="../login">Faça login!</a>
@@ -54,5 +55,8 @@
             <h2><span class="green">Gym</span>Esc</h2>
         </div>
     </div>
+
+    <script src="/src/javascript/globals.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
