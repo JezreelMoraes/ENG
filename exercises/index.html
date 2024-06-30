@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="/src/css/globals.css">
     <link rel="stylesheet" href="/src/css/navbar.css">
     <link rel="stylesheet" href="/src/css/content.css">
+    <link rel="stylesheet" href="/src/css/list.css">
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    <div class="container js-exercises-container">
+    <div class="container">
         <div class="navbar-container">
             <div class="train-container">
                 <a href="/home">
@@ -56,20 +57,24 @@
         </div>
 
         <div class="content-container">
-            <div class="content">
-                <div class="empty-state">
+            <div class="conten js-exercises-container">
+                <div class="empty-state js-empty-state" hidden>
                     <h2 class="title">Nenhum <span class="green">exercício</span> encontrado</h2>
                     <div class="illustration">
                         <img src="/src/images/trains_empty_state.svg" alt="Exercise Illustration">
                     </div>
                 </div>
                 <div class="exercises-list js-list">
-                    <table class="js-table">
-                        <tr>
-                            <th>ID</th>
-                            <th>Nome</th>
-                            <th>Descrição</th>
-                        </tr>
+                    <table class="list">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody class="js-table">
+                        </tbody>
                     </table>
                 </div>
             </div>

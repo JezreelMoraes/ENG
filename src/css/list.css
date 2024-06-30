@@ -1,0 +1,24 @@
+table {
+    column-span: none;
+}
+
+.list {
+    width: max-content;
+    border-spacing: none;
+    border: none;
+}
+
+.list th {
+    border-spacing: none;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-bottom: 1px solid #67678a;
+}
+
+.list td {
+    border-spacing: none;
+    outline: none;
+    border: none;
+    padding: 15px;
+}
