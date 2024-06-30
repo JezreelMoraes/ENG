@@ -1,23 +1,23 @@
 .register-container {
     background-color: var(--container-primary-bg-color);
-    padding: 40px;
+    padding: 4rem;
     display: flex;
-    border-radius: 10px;
+    border-radius: 1rem;
     flex-direction: column;
     width: fit-content;
-    box-shadow: 1px 10px 20px var(--shadow-dark-color);
+    box-shadow: 0 0 2rem var(--shadow-dark-color);
 }
 
 .register-container h2 {
     margin: auto;
-    margin-bottom: 40px;
-    font-size: 2em;
+    margin-bottom: 4rem;
+    font-size: 2rem;
     color: var(--green-color);
 }
 
 .register-container form {
     width: 100%;
-    max-width: 300px;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
 }
@@ -29,13 +29,13 @@
 
 .register-container input,
 select {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
     border: none;
     background-color: var(--input-bg-color);
     color: var(--input-font-active-color);
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .register-container input::placeholder {
@@ -61,16 +61,16 @@ option:disabled {
 }
 
 .register-container button {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
     border: none;
     background-color: var(--button-green-color);
     color: var(--button-font-dark-color);
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0px 0px 10px var(--button-green-color);
+    box-shadow: 0 0 1rem var(--button-green-color);
 }
 
 .register-container button:hover {
@@ -83,7 +83,7 @@ option:disabled {
 }
 
 .register-container .login {
-    margin-top: 20px;
+    margin-top: 2rem;
     text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ option:disabled {
 
 .data-container {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 
@@ -107,5 +107,5 @@ option:disabled {
 }
 
 .footer h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
