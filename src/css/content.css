@@ -45,10 +45,6 @@
     align-items: center;
 }
 
-.content .content-main .empty-state[hidden] {
-    display: none;
-}
-
 .empty-state-content {
     display: flex;
     flex-direction: column;

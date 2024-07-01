@@ -4,7 +4,15 @@ async function getData(filename) {
     return fetch(`/src/data/${filename}.json`)
         .then((response) => response.json())
         .then((json) => json);
-}
+};
+
+function hide(element) {
+    element.classList.add("hide");
+};
+
+function show(element) {
+    element.classList.remove("hide");
+};
 
 function LoadTemplatesController() {
     const parser = new DOMParser();

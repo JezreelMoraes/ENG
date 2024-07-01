@@ -2,24 +2,25 @@ function ExercisesController() {
     this.reference = document.querySelector(".js-exercises-container");
     this.emptyState = document.querySelector(".js-empty-state");
     this.list = document.querySelector(".js-list");
-    this.table = document.querySelector(".js-table");
+    this.listCount = document.querySelector(".js-list-count");
+    this.tableBody = document.querySelector(".js-table-body");
 
     const _this = this;
 
     async function init() {
         const exerciseList = await getData('exercises');
-        console.log(exerciseList);
 
         if (!exerciseList.length) {
-            _this.emptyState.hidden = false;
-            _this.list.hidden = true;
+            show(_this.emptyState);
+            hide(_this.list);
             return;
         }
 
-        _this.emptyState.hidden = true;
-        _this.list.hidden = false;
+        hide(_this.emptyState);
+        show(_this.list);
 
         buildExerciseList(exerciseList);
+        _this.listCount.textContent = exerciseList.length.toString()
     };
 
     function buildExerciseList(exerciseList) {
@@ -31,11 +32,10 @@ function ExercisesController() {
     function buildExercise(index, exercise) {
         const row = document.createElement("tr");
 
-        addRowData(row, exercise["id"]);
         addRowData(row, exercise["name"]);
         addRowData(row, exercise["description"]);
 
-        _this.table.appendChild(row);
+        _this.tableBody.appendChild(row);
     };
 
     function addRowData(row, data) {

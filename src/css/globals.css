@@ -136,7 +136,7 @@ h3 {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 ::-webkit-scrollbar {
@@ -159,5 +159,4 @@ h3 {
 
 .placeholder {
     flex-grow: 1;
-    min-height: 0;
 }
