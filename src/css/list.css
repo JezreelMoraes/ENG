@@ -1,8 +1,20 @@
 :root {
-    --table-main-gray-color: #ddd;
-    --table-main-gray-light-color: #ddddddcc;
-    --table-row-deleted-color: #ff6e6e38;
-    --table-row-received-color: rgba(100, 255, 0, 0.22);
+    --table-main-color: #535374;
+    --table-secundary-color: #313150;
+}
+
+.list-wraper {
+    width: 100%;
+    max-height: 85%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: .1rem solid var(--table-main-color);
+    overflow: hidden;
+    border-radius: 1rem;
 }
 
 .list-container {
@@ -10,25 +22,31 @@
     overflow-x: auto;
 }
 
+.list-header {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--table-main-color);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.list ::-webkit-scrollbar-thumb {
+    margin: 10rem;
+    padding: 10rem;
+}
+
 .list {
     width: 100%;
     border-spacing: 0;
-    border-radius: .8rem .8rem 0 0;
-    border: .1rem solid var(--table-main-gray-color);
-
+    border: none;
 }
 
 .list th {
-    background-color: var(--table-main-gray-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--table-main-color);
     padding: 1rem .8rem;
-}
-
-.list th:first-child {
-    border-top-left-radius: .7rem;
-}
-
-.list th:last-child {
-    border-top-right-radius: .7rem;
+    font-size: 1.5rem;
 }
 
 .list tr:has(td) {
@@ -36,16 +54,22 @@
 }
 
 .list tr:hover {
-    background-color: var(--table-main-gray-light-color);
+    background-color: var(--table-secundary-color);
 }
 
 .list td {
-    border-bottom: .1rem solid var(--table-main-gray-color);
+    border-bottom: .1rem solid var(--table-main-color);
     border-top: .1rem solid transparent;
-    border-left: .1rem dashed var(--table-main-gray-light-color);
-    padding: .4rem 1rem;
+    border-left: .1rem dashed var(--table-secundary-color);
+    padding: 1rem 1rem;
     white-space: nowrap;
     overflow-x: hidden;
+
+    font-size: 1.5rem;
+}
+
+.list td:first-child {
+    border-left: none;
 }
 
 .list td.data-value {
@@ -57,4 +81,17 @@
     justify-content: space-evenly;
     height: 100%;
     gap: .5rem;
+}
+
+.list-footer {
+    background-color: var(--table-main-color);
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2rem;
+    height: 4rem;
+    text-align: left;
+    font-size: 1.5rem;
+
+    position: sticky;
+    bottom: 0;
 }

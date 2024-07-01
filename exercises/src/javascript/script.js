@@ -8,7 +8,9 @@ function ExercisesController() {
 
     async function init() {
         const exerciseList = await getData('exercises');
-        if (!exerciseList) {
+        console.log(exerciseList);
+
+        if (!exerciseList.length) {
             _this.emptyState.hidden = false;
             _this.list.hidden = true;
             return;

@@ -36,7 +36,9 @@
                 <div class="content-main">
                     <div class="empty-state js-empty-state" hidden>
                         <div class="empty-state-content">
-                            <h2 class="title">Nenhum <span class="green">exercício</span> encontrado</h2>
+                            <h2 class="title">
+                                Nenhum <span class="green">exercício</span> encontrado
+                            </h2>
                             <div class="illustration">
                                 <img src="/src/images/exercises_empty_state.svg" alt="Exercise Illustration">
                             </div>
@@ -47,25 +49,33 @@
                         </div>
                     </div>
 
-                    <div class="exercises-list list-container js-list">
-                        <table class="list">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nome</th>
-                                    <th>Descrição</th>
-                                </tr>
-                            </thead>
-                            <tbody class="js-table">
-                            </tbody>
-                        </table>
+                    <div class="list-wraper js-list">
+                        <div class="list-header"></div>
+                        <div class="exercises-list list-container">
+                            <table class="list">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="js-table"></tbody>
+                            </table>
+                        </div>
+
+                        <div class="placeholder"></div>
+
+                        <div class="list-footer">
+                            55 exercícios encontrados
+                        </div>
                     </div>
+
                 </div>
 
                 <div class="content-footer"></div>
             </div>
         </div>
-    </div>
     </div>
 
     <script src="/src/javascript/globals.js"></script>
