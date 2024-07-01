@@ -20,20 +20,32 @@
         <div class="js-template" data-src="navbar/navbar.html"></div>
 
         <div class="content-container container">
-            <div class="content exercises-container  js-exercises-container">
+            <div class="content exercises-container js-exercises-container">
                 <div class="content-header">
-                    <h2 class="title">Exercicios</h2>
+                    <h1 class="title">Exercícios</h1>
+
+                    <a href="/exercises" class="button-wraper">
+                        <div class="button no-wrap">
+                            <img src="/src/icons/plus.svg" alt="add workout" class="icon">
+                            <img src="/src/icons/plus_black.svg" alt="add workout" class="icon black">
+                            <span>Adicionar exercício</span>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="empty-state js-empty-state" hidden>
-                    <h2 class="title">Nenhum <span class="green">exercício</span> encontrado</h2>
-                    <div class="illustration">
-                        <img src="/src/images/trains_empty_state.svg" alt="Exercise Illustration">
+                <div class="content-main">
+                    <div class="empty-state js-empty-state" hidden>
+                        <div class="empty-state-content">
+                            <h2 class="title">Nenhum <span class="green">exercício</span> encontrado</h2>
+                            <div class="illustration">
+                                <img src="/src/images/exercises_empty_state.svg" alt="Exercise Illustration">
+                            </div>
+                            <p class="description">
+                                Adicione <span class="green">exercícios</span> agora mesmo clicando no botão
+                                <span class="green">"Adicionar exercício"</span> logo acima.
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="">
-
 
                     <div class="exercises-list list-container js-list">
                         <table class="list">
@@ -49,8 +61,11 @@
                         </table>
                     </div>
                 </div>
+
+                <div class="content-footer"></div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="/src/javascript/globals.js"></script>

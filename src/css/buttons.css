@@ -1,0 +1,92 @@
+a:has(.button) {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.button-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+
+    outline: .1rem solid var(--button-green-color);
+    color: var(--button-font-ligth-color);
+
+    font-size: 1.5rem;
+}
+
+.button.no-wrap {
+    text-wrap: nowrap;
+}
+
+.button.no-wrap span {
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.button.red {
+    outline: .1rem solid var(--red-color);
+}
+
+.button:hover {
+    background-color: var(--button-green-color);
+    box-shadow: 0 0 1rem var(--button-green-color);
+    color: var(--button-font-dark-color);
+}
+
+.icon.black {
+    display: none;
+}
+
+.button:hover>.icon {
+    display: none;
+}
+
+.button:hover>.icon.black {
+    display: block;
+}
+
+.button.red:hover>.icon {
+    display: block;
+}
+
+.button.red:hover>.icon.black {
+    display: none;
+}
+
+.button.red:hover {
+    background-color: var(--red-color);
+    box-shadow: 0 0 1rem rgb(255, 120, 96);
+    color: var(--button-font-ligth-color);
+}
+
+.button.active {
+    background-color: var(--button-green-color);
+    box-shadow: 0 0 1rem var(--button-green-color);
+    color: var(--button-font-dark-color);
+}
+
+.button.active>.icon {
+    display: none;
+}
+
+.button.active>.icon.icon.black {
+    display: block;
+}
+
+.logo {
+    margin-bottom: 3rem;
+}
