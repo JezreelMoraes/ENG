@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/src/css/globals.css">
     <link rel="stylesheet" href="/src/css/navbar.css">
     <link rel="stylesheet" href="/src/css/content.css">
+    <link rel="stylesheet" href="/src/css/form.css">
     <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 
@@ -25,6 +26,48 @@
                 </div>
 
                 <div class="content-main">
+                    <form method="post" class="form">
+                        <div class="form-content-container exercises-form-content-container">
+                            <div class="form-data">
+                                <div class="columns">
+                                    <div class="col">
+                                        <label for="name">Nome</label>
+                                        <input required type="text" id="name" name="name" placeholder="Nome">
+
+                                        <label for="train_level">Tipo de exercício</label>
+                                        <select required name="train_level" id="train_level">
+                                            <option value="" disabled selected>Selecione uma opção</option>
+                                            <option value="0">Repetições</option>
+                                            <option value="1">Duração</option>
+                                        </select>
+
+                                        <label for="description">Descrição</label>
+                                        <textarea name="description" class="no-mb" id="description"
+                                            placeholder="Descrição"></textarea>
+                                    </div>
+                                    <div class="col">
+                                        <label for="image">Imagem</label>
+                                        <label for="image" class="input-file-holder no-mb">
+                                            <img src="/src/icons/img.svg" class="hover" alt="img file">
+                                            <img src="/src/icons/img-deactivate.svg" alt="img file">
+                                        </label>
+                                        <input type="file" name="image" id="image" accept="image/png, image/jpeg"
+                                            class="hide">
+                                    </div>
+                                </div>
+
+                                <div class="placeholder"></div>
+
+                                <div class="form-inline-container">
+                                    <a href="/exercises">
+                                        <button type="button" class="red">VOLTAR</button>
+                                    </a>
+
+                                    <button type="submit">CADASTRAR-SE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
                 <div class="content-footer"></div>

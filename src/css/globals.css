@@ -29,6 +29,10 @@
     --button-hover-green-color: #00e68a;
     --button-click-green-color: #0ca065;
 
+    --button-red-color: #ff6347;
+    --button-hover-red-color: #e05137;
+    --button-click-red-color: #c14530;
+
     --button-font-dark-color: #282845;
     --button-font-light-color: #ffffff;
 }
@@ -158,5 +162,6 @@ h3 {
 }
 
 .placeholder {
-    flex-grow: 1;
+    flex-grow: 1 !important;
+    height: 100% !important;
 }
