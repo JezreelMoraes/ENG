@@ -18,7 +18,8 @@
 
 .list-container {
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .list {
@@ -34,6 +35,7 @@
     background-color: var(--table-main-color);
     padding: 1rem .8rem;
     font-size: 1.5rem;
+
 }
 
 .list tr:has(td) {
@@ -45,18 +47,18 @@
 }
 
 .list td {
+    min-width: 20rem;
     border-bottom: .1rem solid var(--table-main-color);
     border-top: .1rem solid transparent;
     border-left: .1rem dashed var(--table-secundary-color);
     padding: 1rem 1rem;
-    white-space: nowrap;
-    overflow-x: hidden;
 
     font-size: 1.5rem;
 }
 
 .list td:first-child {
     border-left: none;
+    text-align: center;
 }
 
 .list td.data-value {

@@ -125,6 +125,12 @@ form {
 
 .form-footer .details a {
     color: var(--green-color);
+    text-decoration: none;
+}
+
+.form-footer .details:hover a {
+    color: var(--button-green-color);
+    text-decoration: underline;
 }
 
 .form-inline-container {
@@ -148,7 +154,9 @@ form {
     align-items: center;
 
     background-color: var(--input-bg-color);
-    background-size: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 
     color: var(--input-font-active-color);
     font-size: 1.5rem;

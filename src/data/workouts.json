@@ -1,128 +1,86 @@
 [
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Peitoral",
+        "description": "Exercícios para o peitoral incluem supino (reto, inclinado e declinado), flexões de braço, e crucifixo com halteres. Esses exercícios trabalham os músculos peitorais maiores e menores, além dos deltoides e tríceps."
     },
     {
-        "id": "2",
-        "user_id": "1",
-        "name": "Flexões",
-        "image_path": "",
-        "description": "Empurre o chão repetidas vezes"
+        "name": "Costas",
+        "description": "Exercícios para as costas incluem puxada na barra fixa, remada com halteres, remada na máquina e levantamento terra. Esses exercícios ajudam a desenvolver os músculos dorsais, romboides e trapézios."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Ombros",
+        "description": "Exercícios para os ombros incluem elevação lateral, desenvolvimento militar, elevação frontal e encolhimento de ombros. Esses exercícios trabalham os deltoides anterior, medial e posterior, além dos trapézios."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Braços",
+        "description": "Exercícios para os braços incluem rosca direta com barra, rosca alternada com halteres, tríceps na polia e tríceps banco. Esses exercícios fortalecem os músculos bíceps, tríceps e antebraços."
     },
     {
-        "id": "2",
-        "user_id": "1",
-        "name": "Flexões",
-        "image_path": "",
-        "description": "Empurre o chão repetidas vezes"
+        "name": "Abdômen",
+        "description": "Exercícios para o abdômen incluem abdominais tradicionais, prancha, elevação de pernas e abdominal na roda. Esses exercícios trabalham os músculos retos abdominais, oblíquos e transverso do abdômen."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Pernas",
+        "description": "Exercícios para as pernas incluem agachamentos, leg press, extensora de pernas e flexora de pernas. Esses exercícios desenvolvem os músculos quadríceps, isquiotibiais, glúteos e panturrilhas."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Ombros",
+        "description": "Exercícios para os ombros incluem elevação lateral, desenvolvimento militar, elevação frontal e encolhimento de ombros. Esses exercícios trabalham os deltoides anterior, medial e posterior, além dos trapézios."
     },
     {
-        "id": "2",
-        "user_id": "1",
-        "name": "Flexões",
-        "image_path": "",
-        "description": "Empurre o chão repetidas vezes"
+        "name": "Braços",
+        "description": "Exercícios para os braços incluem rosca direta com barra, rosca alternada com halteres, tríceps na polia e tríceps banco. Esses exercícios fortalecem os músculos bíceps, tríceps e antebraços."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Abdômen",
+        "description": "Exercícios para o abdômen incluem abdominais tradicionais, prancha, elevação de pernas e abdominal na roda. Esses exercícios trabalham os músculos retos abdominais, oblíquos e transverso do abdômen."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Pernas",
+        "description": "Exercícios para as pernas incluem agachamentos, leg press, extensora de pernas e flexora de pernas. Esses exercícios desenvolvem os músculos quadríceps, isquiotibiais, glúteos e panturrilhas."
     },
     {
-        "id": "2",
-        "user_id": "1",
-        "name": "Flexões",
-        "image_path": "",
-        "description": "Empurre o chão repetidas vezes"
+        "name": "Ombros",
+        "description": "Exercícios para os ombros incluem elevação lateral, desenvolvimento militar, elevação frontal e encolhimento de ombros. Esses exercícios trabalham os deltoides anterior, medial e posterior, além dos trapézios."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Braços",
+        "description": "Exercícios para os braços incluem rosca direta com barra, rosca alternada com halteres, tríceps na polia e tríceps banco. Esses exercícios fortalecem os músculos bíceps, tríceps e antebraços."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Abdômen",
+        "description": "Exercícios para o abdômen incluem abdominais tradicionais, prancha, elevação de pernas e abdominal na roda. Esses exercícios trabalham os músculos retos abdominais, oblíquos e transverso do abdômen."
     },
     {
-        "id": "2",
-        "user_id": "1",
-        "name": "Flexões",
-        "image_path": "",
-        "description": "Empurre o chão repetidas vezes"
+        "name": "Pernas",
+        "description": "Exercícios para as pernas incluem agachamentos, leg press, extensora de pernas e flexora de pernas. Esses exercícios desenvolvem os músculos quadríceps, isquiotibiais, glúteos e panturrilhas."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Ombros",
+        "description": "Exercícios para os ombros incluem elevação lateral, desenvolvimento militar, elevação frontal e encolhimento de ombros. Esses exercícios trabalham os deltoides anterior, medial e posterior, além dos trapézios."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Braços",
+        "description": "Exercícios para os braços incluem rosca direta com barra, rosca alternada com halteres, tríceps na polia e tríceps banco. Esses exercícios fortalecem os músculos bíceps, tríceps e antebraços."
     },
     {
-        "id": "2",
-        "user_id": "1",
-        "name": "Flexões",
-        "image_path": "",
-        "description": "Empurre o chão repetidas vezes"
+        "name": "Abdômen",
+        "description": "Exercícios para o abdômen incluem abdominais tradicionais, prancha, elevação de pernas e abdominal na roda. Esses exercícios trabalham os músculos retos abdominais, oblíquos e transverso do abdômen."
     },
     {
-        "id": "1",
-        "user_id": "1",
-        "name": "Supino",
-        "image_path": "",
-        "description": "Faça bla bla"
+        "name": "Pernas",
+        "description": "Exercícios para as pernas incluem agachamentos, leg press, extensora de pernas e flexora de pernas. Esses exercícios desenvolvem os músculos quadríceps, isquiotibiais, glúteos e panturrilhas."
+    },
+    {
+        "name": "Quadríceps",
+        "description": "Exercícios para os quadríceps incluem agachamentos, leg press, extensora de pernas e passada. Esses exercícios trabalham os quatro músculos principais do quadríceps: reto femoral, vasto lateral, vasto medial e vasto intermédio. Eles ajudam a fortalecer e tonificar a parte frontal das coxas."
+    },
+    {
+        "name": "Bíceps",
+        "description": "Exercícios para os bíceps incluem rosca direta com barra, rosca alternada com halteres, rosca concentrada e rosca martelo. Esses exercícios visam os músculos bíceps braquial, braquiorradial e braquial, ajudando a desenvolver força e definição na parte frontal dos braços."
+    },
+    {
+        "name": "Costas",
+        "description": "Exercícios para as costas incluem puxada na barra fixa, remada com halteres, remada na máquina e levantamento terra. Esses exercícios ajudam a desenvolver os músculos dorsais, romboides, trapézios e eretores da espinha, promovendo uma boa postura e força na parte superior e média das costas."
     }
 ]
