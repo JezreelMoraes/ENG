@@ -1,9 +1,9 @@
 function ExercisesController() {
     this.reference = document.querySelector(".js-exercises-container");
-    this.emptyState = document.querySelector(".js-empty-state");
-    this.list = document.querySelector(".js-list");
-    this.listCount = document.querySelector(".js-list-count");
-    this.tableBody = document.querySelector(".js-table-body");
+    this.emptyState = this.reference.querySelector(".js-empty-state");
+    this.list = this.reference.querySelector(".js-list");
+    this.listCount = this.reference.querySelector(".js-list-count");
+    this.tableBody = this.reference.querySelector(".js-table-body");
 
     const _this = this;
 
