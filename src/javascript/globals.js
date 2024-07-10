@@ -1,18 +1,20 @@
-let navbarController;
+function DataUtils() {
+    this.getData = async function (filename) {
+        return fetch(`/src/data/${filename}.json`)
+            .then((response) => response.json())
+            .then((json) => json);
+    };
+}
 
-async function getData(filename) {
-    return fetch(`/src/data/${filename}.json`)
-        .then((response) => response.json())
-        .then((json) => json);
-};
+function ElementUtils() {
+    this.hide = function (element) {
+        element.classList.add("hide");
+    };
 
-function hide(element) {
-    element.classList.add("hide");
-};
-
-function show(element) {
-    element.classList.remove("hide");
-};
+    this.show = function (element) {
+        element.classList.remove("hide");
+    };
+}
 
 function LoadTemplatesController() {
     const parser = new DOMParser();
@@ -37,7 +39,7 @@ function LoadTemplatesController() {
     };
 
     init().then(() => {
-        navbarController = new NavbarController()
+        new NavbarController()
     });
 };
 
@@ -58,4 +60,7 @@ function NavbarController() {
     init();
 };
 
-const loadTemplatesController = new LoadTemplatesController();
+new LoadTemplatesController();
+
+const dataUtils = new DataUtils();
+const elementUtils = new ElementUtils();

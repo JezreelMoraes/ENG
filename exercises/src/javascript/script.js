@@ -8,16 +8,16 @@ function ExercisesController() {
     const _this = this;
 
     async function init() {
-        const exerciseList = await getData('exercises');
+        const exerciseList = await dataUtils.getData('exercises');
 
         if (!exerciseList.length) {
-            show(_this.emptyState);
-            hide(_this.list);
+            elementUtils.show(_this.emptyState);
+            elementUtils.hide(_this.list);
             return;
         }
 
-        hide(_this.emptyState);
-        show(_this.list);
+        elementUtils.hide(_this.emptyState);
+        elementUtils.show(_this.list);
 
         buildExerciseList(exerciseList);
         _this.listCount.textContent = exerciseList.length.toString()
