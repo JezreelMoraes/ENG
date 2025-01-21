@@ -9,7 +9,7 @@ mergeable:
           files:
               - '*Service.groovy'
           includes:
-              regex: 'try\\s*\\{[\\s\\S]*?\\}\\s*catch\\s*\\(.*\\)'
+              regex: 'try'
     pass:
         - do: comment
           payload:
