@@ -1,0 +1,16 @@
+version: 2
+mergeable:
+  - when: pull_request.opened, pull_request.edited
+    validate:
+        - do: headRef
+          must_exclude:
+              regex: "release"
+        - do: changed-files
+          files:
+              - '*Service.groovy'
+          includes:
+              regex: 'try\\s*\\{[\\s\\S]*?\\}\\s*catch\\s*\\(.*\\)'
+    pass:
+        - do: comment
+          payload:
+              body: Não esqueça de garantir que o uso do `try catch` criado / modificado não acabe ofuscando erros e causando rollbacks silenciosos. Saiba mais em nosso [livro de elite](https://github.com/asaasdev/livro-de-elite/blob/master/best-practices/asaas.md#cuidado-no-uso-de-try-catch-em-services).
